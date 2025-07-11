@@ -1,0 +1,79 @@
+import React, { useState } from "react";
+import RoomResult from "../common/RoomResult";
+import RoomSearch from "../common/RoomSearch";
+
+const HomePage = () => {
+  const [roomSearchResults, setRoomSearchResults] = useState([]);
+
+  const handleSearchResult = (results) => {
+    setRoomSearchResults(results);
+  };
+
+  return (
+    <div className="home">
+      {/* Banner Section */}
+      <section className="banner-section">
+        <img src="./assets/images/hotel.webp" alt="Conference Room" className="banner-image" />
+        <div className="banner-overlay">
+          <div className="banner-content">
+            <h1><span className="highlight-text">Welcome to Conference Room Booking</span></h1>
+            <p>Find, book, and manage your meetings in just a few clicks.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Room Search */}
+      <section className="room-search-section">
+        <RoomSearch onSearch={handleSearchResult} />
+        {roomSearchResults.length > 0 && <RoomResult results={roomSearchResults} />}
+      </section>
+
+      {/* Services */}
+      <section className="service-section">
+        <h2 className="section-title">Our Facilities</h2>
+        <div className="service-cards">
+          {[
+            {
+              img: "./assets/images/wifi.png",
+              title: "High-Speed Wi-Fi",
+              desc: "Seamless internet access for all your conference needs."
+            },
+            {
+              img: "./assets/images/ac.png",
+              title: "Air-Conditioned Rooms",
+              desc: "Comfortable, climate-controlled meeting environments."
+            },
+            {
+              img: "./assets/images/parking.png",
+              title: "Secure Parking",
+              desc: "Spacious and safe parking area for all guests."
+            },
+            {
+              img: "./assets/images/coffee.png",
+              title: "Refreshments",
+              desc: "Complimentary tea, coffee, and snacks available."
+            }
+          ].map((service, index) => (
+            <div className="service-card" key={index}>
+              <img src={service.img} alt={service.title} />
+              <div>
+                <h3>{service.title}</h3>
+                <p>{service.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="about-section">
+        <h2 className="section-title">Why Choose Us?</h2>
+        <p>
+          Our conference room booking system simplifies the scheduling process for businesses and professionals. Whether it’s a meeting, seminar, or workshop, we offer real-time availability, modern facilities, and exceptional service.
+        </p>
+      </section>
+    </div>
+  );
+};
+
+export default HomePage;
