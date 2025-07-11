@@ -8,6 +8,7 @@
     - Naresh Singh Mahara/Naresh.mahara@anudip.org
     - Chetan Kashyap/Yallan0311@gmail.com
     - Pushpa Mehta/mehtapushpa2k1@gmail.com
+      
 3.Tech Stack 
 
     - Backend
