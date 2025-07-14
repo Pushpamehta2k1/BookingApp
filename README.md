@@ -1,6 +1,7 @@
-1. Project Title & Description - 
+1. Project Title & Description -
     - MEETING ROOM BOOKING APP
-    - A full-stack web application that allows users and admins to book conference rooms based on available time slots. The system prevents double booking and sends email confirmations on successful booking, updates, and cancellations.
+    - A full-stack web application that allows users and admins to book conference rooms based on available time slots.
+    - The system prevents double booking and sends email confirmations on successful booking, updates, and cancellations.
 
 2. Team Details
     - Team - tech Titans
@@ -46,6 +47,7 @@
     Already booked slots are disabled
     Prevents overlapping bookings
     is_booked flag updated automatically based on presence in booking_time_slot table
+   
     -----------------------------  📨 Email Notifications -----------------------------
     Booking Confirmation – sent when a user books a room
     Booking Update – sent after booking is updated
@@ -83,41 +85,42 @@
     npm install
     npm start
 
-5. ------------------------- Setup Introduction  -----------------------------
+6. ------------------------- Setup Introduction  -----------------------------
+   
     Follow the steps below to set up and run the Conference Room Booking App locally:
         Prerequisites:
         Node.js (v18 or above)
         npm or yarn
         Git installed
         (Optional) MySQL or MongoDB if using backend with database
+   
     1. Clone the Repository
         in Terminal type
         git clone https://github.com/your-Pushpamehta2k1/BookingApp.git
         cd conference-room-booking-app
-    2. Install Dependencies
+       
+    3. Install Dependencies
         npm install
         # or
         yarn install
-    3. Environment Variables
+       
+    4. Environment Variables
         Create a .env file in the root directory and add necessary variables (example below):
         env
         REACT_APP_API_BASE_URL=http://localhost:7070/api
         If backend is included, add DB config, secret keys, etc.
-    4. Run the App
+       
+    5. Run the App
         To start the frontend:
         npm start
-        # or
-        yarn start
-        (Optional) To start the backend (if separate):
-
         cd backend
         npm install
-        npm run dev
-    5. Access the Application
+       
+    7. Access the Application
         Open your browser and visit:
         http://localhost:7070
 
-6. Usage Guide 
+7. Usage Guide 
 
     🏠 Home Page
         Displays the main dashboard with a search form.
@@ -143,18 +146,19 @@
         Login as admin to:
         Add/edit/delete rooms
         View all user bookings
-7. API Endpoints / Architecture
+   
+8. API Endpoints / Architecture
 📊 System Architecture
     Frontend (ReactJS)
         |
         ↓
-    Backend API (Node.js / Express)
+    Backend API (Spring API)
         |
         ↓
-    Database (MySQL / MongoDB)
+    Database (MySQL)
     Frontend: React app for users to book rooms.
 
-    Backend: RESTful API built using Node.js/Express.
+    Backend: RESTful API built using Spring Boot.
 
     ----------------- API Endpoints E.g ------------------------
     -----------------------------------------------------------------------    
@@ -173,7 +177,8 @@
     | `DELETE` | `/api/admin/rooms/:id`    | Admin: Delete room          |
 
 Like we use these approach 
-    Database: Stores rooms, users, and bookings (MySQL or MongoDB).
+==========================
+Database: Stores rooms, users, and bookings (MySQL or MongoDB).
     📊 Database Tables
         user: stores users, roles
         room: stores conference room info
@@ -189,7 +194,7 @@ Like we use these approach
         Email templates (HTML-based)
 
     👨‍💻 Author
-        Developed by Yallan
+        Developed by Chetan
         📬 Email: yallan0311@gmail.com
 
 
@@ -217,10 +222,9 @@ Like we use these approach
         Relation: One Room can have many TimeSlots
         Type: @ManyToOne (each TimeSlot belongs to a Room)
         Used For: Reference purpose (not for booking conflict, which is checked through booking_time_slot)
-
-    8. Licence - No Licence 
+        
      
     -------------------------------------Demo Video LINK --------------------------------
     GOOGLE DRIVE LINK ARE HERE 
-        https://drive.google.com/file/d/1MDN_41Nqks1fL3oV_GhkXxBdimKZXaAl/view?usp=drivesdk
+       https://drive.google.com/file/d/19IQvqpw8rnitgTi_NcbGOqMmQLikZtWT/view?usp=drivesdk
         
