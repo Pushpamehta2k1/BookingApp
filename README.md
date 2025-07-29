@@ -1,4 +1,4 @@
-1. Project Title & Description -
+1. Project Title & Description 
     - MEETING ROOM BOOKING APP
     - A full-stack web application that allows users and admins to book conference rooms based on available time slots.
     - The system prevents double booking and sends email confirmations on successful booking, updates, and cancellations.
@@ -6,9 +6,9 @@
 2. Team Details
     - Team - tech Titans
     - Members 
-    - Naresh Singh Mahara/Naresh.mahara@anudip.org
-    - Chetan Kashyap/Yallan0311@gmail.com
-    - Pushpa Mehta/mehtapushpa2k1@gmail.com
+    - Naresh Singh Mahara  : Naresh.mahara@anudip.org
+    - Chetan kashyap       : Chetankashyap951@gmail.com
+    - Pushpa Mehta         : mehtapushpa2k1@gmail.com
       
 3.Tech Stack 
 
@@ -226,5 +226,5 @@ Database: Stores rooms, users, and bookings (MySQL or MongoDB).
      
     -------------------------------------Demo Video LINK --------------------------------
     GOOGLE DRIVE LINK ARE HERE 
-       https://drive.google.com/file/d/19IQvqpw8rnitgTi_NcbGOqMmQLikZtWT/view?usp=drivesdk
+      https://drive.google.com/file/d/19IQvqpw8rnitgTi_NcbGOqMmQLikZtWT/view?usp=drivesdk](https://drive.google.com/file/d/1MDN_41Nqks1fL3oV_GhkXxBdimKZXaAl/view?usp=drivesdk )
         
